@@ -1,8 +1,11 @@
 from modules import data
+from modules import excuter
 
+import keyboard
 import locale
 import json
 import random
+import os
 
 def get_system_language():
     lang, _ = locale.getdefaultlocale()
@@ -31,7 +34,20 @@ def output_hello_message():
     return None
 
 def Get_User_Input(lang):
-    pass
+    commands = []
+    while True:
+        message = "\033[32m" + f"selena@{data.Get_System_Name()}" + '\033[0m' + ":~# "
+        user_input = input(message)
+        if user_input == "exit":
+            break
+        else:
+            if user_input[0:6] == "selena":
+                pass
+            else:
+                commands.append(user_input)
+                # if keyboard.is_pressed(72):
+                #     print(commands[-1])
+                excuter.excute_command(user_input)
 
 def content():
     # hello text가 false인 경우 작성
