@@ -9,7 +9,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'selena=app:run',  # focalors 명령어를 app.py의 stage 함수에 연결
+            'selenacli=app:run',  # selenacli 명령어를 app.py의 stage 함수에 연결
         ],
     },
 )

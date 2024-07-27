@@ -14,3 +14,13 @@ Python Based AI Terminal CLI Interface
 - 자동 업데이트 지원 (Github Release 기반)
 - print 함수 지원 (실제 파일 프린팅 명령)
 
+### Installation
+```bash
+pip install selenacli
+```
+
+### Usage
+```bash
+selenacli
+```
+
