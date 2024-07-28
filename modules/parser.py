@@ -1,5 +1,6 @@
 from modules import data
 from modules import excuter
+from modules import command
 
 import keyboard
 import locale
@@ -42,7 +43,7 @@ def Get_User_Input(lang):
             break
         else:
             if user_input[0:6] == "selena":
-                pass
+                command.parser(user_input, lang)
             else:
                 commands.append(user_input)
                 # if keyboard.is_pressed(72):
